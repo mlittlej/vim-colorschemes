@@ -92,4 +92,14 @@ hi Ignore     ctermfg=214 ctermbg=none                               gui=None   
 hi Todo       ctermfg=196 ctermbg=none                               gui=None        guifg=#ff0000       guibg=#282828
 hi Exception  ctermfg=080 ctermbg=none cterm=bold                    gui=bold        guifg=#5fdfdf       guibg=#282828
 
+" Personal additions/edits
+hi   GitGutterAdd      ctermfg=2     guifg=#008000
+hi   GitGutterChange   ctermfg=172   guifg=#df8700
+hi   GitGutterDelete   ctermfg=1     guifg=#800000
+
+hi   GitGutterAddLine      ctermbg=22    guibg=#005f00
+hi   GitGutterChangeLine   ctermbg=94    guibg=#875f00
+hi   GitGutterDeleteLine   ctermbg=52    guibg=#5f0000
+
+
 "vim: sw=4
