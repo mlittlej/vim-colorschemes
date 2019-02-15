@@ -101,5 +101,8 @@ hi   GitGutterAddLine      ctermbg=22    guibg=#005f00
 hi   GitGutterChangeLine   ctermbg=94    guibg=#875f00
 hi   GitGutterDeleteLine   ctermbg=52    guibg=#5f0000
 
+hi SyntasticWarningSign		ctermfg=208 guifg=#ff8700
+hi SyntasticStyleWarningSign	ctermfg=208	guifg=#ff8700
+
 
 "vim: sw=4
