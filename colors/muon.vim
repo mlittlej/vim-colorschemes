@@ -24,7 +24,6 @@ hi StatusLineNC ctermfg=243 ctermbg=235 cterm=none                  gui=None    
 hi DiffDelete   ctermfg=234 ctermbg=233                             gui=None        guifg=#1c1c1c       guibg=#121212
 hi DiffAdd      ctermbg=236                                         gui=None        guibg=#303030
 hi DiffChange   ctermbg=235                                         gui=None        guibg=#262626
-hi DiffText     ctermfg=161 ctermbg=none cterm=underline             gui=underline   guifg=#df005f       guibg=#282828
 
 hi Cursor       ctermfg=234 ctermbg=250                             gui=None        guifg=#1c1c1c       guibg=#bcbcbc
 
@@ -55,7 +54,7 @@ if version >= 700 " Vim 7.x specific colors
     hi CursorLine   ctermbg=235 cterm=none                          gui=None        guibg=#262626
     hi CursorColumn ctermbg=235 cterm=none                          gui=None        guibg=#262626
 
-    hi MatchParen   ctermfg=196 ctermbg=none cterm=bold,reverse      gui=bold,reverse    guifg=#ff0000       guibg=#282828
+    hi MatchParen   ctermfg=196              cterm=bold,reverse      gui=bold,reverse    guifg=#ff0000       guibg=#1c1c1c
 
     hi Tabline      ctermfg=245 ctermbg=235 cterm=underline         gui=underline   guifg=#8a8a8a       guibg=#262626
     hi TablineSel   ctermfg=250 ctermbg=none cterm=bold              gui=bold        guifg=#bcbcbc       guibg=#282828
@@ -104,5 +103,14 @@ hi   GitGutterDeleteLine   ctermbg=52    guibg=#5f0000
 hi SyntasticWarningSign		ctermfg=208 guifg=#ff8700
 hi SyntasticStyleWarningSign	ctermfg=208	guifg=#ff8700
 
+hi! link ALEWarningSign SyntasticWarningSign
+hi! link ALEStyleWarningSign SyntasticStyleWarningSign
+hi! link ALEInfoSign Debug
+
+hi! link DiffAdd	GitGutterAddLine
+hi! link DiffChange	GitGutterChangeLine
+hi! link DiffDelete	GitGutterDeleteLine
+
+hi DiffText     cterm=bold,underline	gui=bold,underline  ctermbg=94 guibg=#875f00
 
 "vim: sw=4
