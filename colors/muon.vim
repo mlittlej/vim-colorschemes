@@ -40,7 +40,8 @@ hi MoreMsg      ctermfg=122 ctermbg=none cterm=none                  gui=None   
 hi Question     ctermfg=122 ctermbg=none cterm=bold                  gui=bold        guifg=#87ffdf       guibg=#282828
 hi WarningMsg   ctermfg=122 ctermbg=none cterm=none                  gui=None        guifg=#87ffdf       guibg=#282828
 hi ErrorMsg     ctermfg=255 ctermbg=160 cterm=none                  gui=None        guifg=#eeeeee       guibg=#df0000
-hi Error        ctermfg=196 ctermbg=none cterm=none                  gui=None        guifg=#ff0000       guibg=#282828
+" hi Error        ctermfg=196 ctermbg=none cterm=none                  gui=None        guifg=#ff0000       guibg=#282828
+hi Error        ctermfg=232 ctermbg=160 cterm=bold                  gui=None        guifg=#ff0000       guibg=#282828
 
 hi SpecialKey   ctermfg=214 ctermbg=none                             gui=None        guifg=#ffaf00       guibg=#282828
 hi Title        ctermfg=075 ctermbg=none cterm=bold                  gui=bold        guifg=#5fafff       guibg=#282828
@@ -66,9 +67,13 @@ if version >= 700 " Vim 7.x specific colors
     hi PmenuThumb   ctermfg=116 ctermbg=116 cterm=none              gui=None        guifg=#87dfdf       guibg=#87dfdf
 
     hi SpellBad     ctermfg=198 ctermbg=none cterm=underline         gui=underline   guifg=#ff0087       guibg=#282828
+    hi SpellBad     ctermfg=232 ctermbg=160 cterm=bold,underline
     hi SpellCap     ctermfg=198 ctermbg=none cterm=none              gui=None        guifg=#ff0087       guibg=#282828
+    hi SpellCap     ctermfg=232 ctermbg=40 cterm=bold,underline              gui=None        guifg=#ff0087       guibg=#282828
     hi SpellRare    ctermfg=198 ctermbg=none cterm=none              gui=None        guifg=#ff0087       guibg=#282828
+    hi SpellRare    ctermfg=232 ctermbg=255 cterm=bold,underline
     hi SpellLocal   ctermfg=198 ctermbg=none cterm=none              gui=None        guifg=#ff0087       guibg=#282828
+    hi SpellLocal   ctermfg=82  ctermbg=160 cterm=bold,underline              gui=None        guifg=#ff0087       guibg=#282828
 endif
 
 if version >= 703 " Vim 7.3 specific colors
@@ -88,7 +93,7 @@ hi Special    ctermfg=050 ctermbg=none                               gui=None   
 hi Delimiter  ctermfg=153 ctermbg=none                               gui=None        guifg=#afdfff       guibg=#282828
 hi Number     ctermfg=086 ctermbg=none                               gui=None        guifg=#5fffdf       guibg=#282828
 hi Ignore     ctermfg=214 ctermbg=none                               gui=None        guifg=#ffaf00       guibg=#282828
-hi Todo       ctermfg=196 ctermbg=none                               gui=None        guifg=#ff0000       guibg=#282828
+hi Todo       ctermfg=160 ctermbg=232  cterm=bold                   gui=None        guifg=#ff0000       guibg=#282828 
 hi Exception  ctermfg=080 ctermbg=none cterm=bold                    gui=bold        guifg=#5fdfdf       guibg=#282828
 
 " Personal additions/edits
