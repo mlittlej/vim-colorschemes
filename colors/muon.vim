@@ -13,9 +13,9 @@ if version > 580
 endif
 let g:colors_name="muon"
 
-hi Normal       ctermfg=250 ctermbg=none                             gui=None        guifg=#bcbcbc       guibg=#282828
-hi LineNr       ctermfg=239 ctermbg=none                             gui=None        guifg=#4e4e4e       guibg=#282828
-hi NonText      ctermfg=234 ctermbg=none                             gui=None        guifg=#1c1c1c       guibg=#282828
+hi Normal       ctermfg=250 ctermbg=none                             gui=None        guifg=#bcbcbc
+hi LineNr       ctermfg=239 ctermbg=none                             gui=None        guifg=#4e4e4e
+hi NonText      ctermfg=234 ctermbg=none                             gui=None        guifg=#1c1c1c
 
 hi VertSplit    ctermfg=237 ctermbg=235 cterm=none                  gui=None        guifg=#3a3a3a       guibg=#262626
 hi StatusLine   ctermfg=249 ctermbg=235 cterm=underline             gui=underline   guifg=#b2b2b2       guibg=#262626
@@ -95,27 +95,5 @@ hi Number     ctermfg=086 ctermbg=none                               gui=None   
 hi Ignore     ctermfg=214 ctermbg=none                               gui=None        guifg=#ffaf00       guibg=#282828
 hi Todo       ctermfg=160 ctermbg=232  cterm=bold                   gui=None        guifg=#ff0000       guibg=#282828 
 hi Exception  ctermfg=080 ctermbg=none cterm=bold                    gui=bold        guifg=#5fdfdf       guibg=#282828
-
-" Personal additions/edits
-hi   GitGutterAdd      ctermfg=2     guifg=#008000
-hi   GitGutterChange   ctermfg=172   guifg=#df8700
-hi   GitGutterDelete   ctermfg=1     guifg=#800000
-
-hi   GitGutterAddLine      ctermbg=22    guibg=#005f00
-hi   GitGutterChangeLine   ctermbg=94    guibg=#875f00
-hi   GitGutterDeleteLine   ctermbg=52    guibg=#5f0000
-
-hi SyntasticWarningSign		ctermfg=208 guifg=#ff8700
-hi SyntasticStyleWarningSign	ctermfg=208	guifg=#ff8700
-
-hi! link ALEWarningSign SyntasticWarningSign
-hi! link ALEStyleWarningSign SyntasticStyleWarningSign
-hi! link ALEInfoSign Debug
-
-hi! link DiffAdd	GitGutterAddLine
-hi! link DiffChange	GitGutterChangeLine
-hi! link DiffDelete	GitGutterDeleteLine
-
-hi DiffText     cterm=bold,underline	gui=bold,underline  ctermbg=94 guibg=#875f00
 
 "vim: sw=4
