@@ -5,7 +5,7 @@ hi! link ALEWarningSign 	SyntasticWarningSign
 hi! link ALEStyleWarningSign 	SyntasticStyleWarningSign
 hi! link ALEInfoSign Debug
 
-hi ALEErrorLine			guibg=#cc0000
+hi ALEErrorLine			guibg=#cc0000	guifg=#000000
 "hi ALEWarningLine		guibg=#667700
 hi ALEInfoLine			guibg=#000099
 
